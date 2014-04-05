@@ -1,0 +1,359 @@
+03-27 23:35:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:35:05 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:35:05 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:35:05 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:35:05 jdbc[3]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:171)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:116)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:90)
+	at org.h2.Driver.connect(Driver.java:73)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:252)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.drop(SchemaExport.java:221)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:839)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:251)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:894)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:486)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:462)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:430)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1018)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext$3.run(AbstractApplicationContext.java:917)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	... 27 more
+03-27 23:35:05 jdbc[3]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:171)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:116)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:90)
+	at org.h2.Driver.connect(Driver.java:73)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:252)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.drop(SchemaExport.java:221)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:839)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:251)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:894)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:486)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:462)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:430)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1018)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext$3.run(AbstractApplicationContext.java:917)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	... 27 more
+03-27 23:35:05 jdbc[3]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:171)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:116)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:90)
+	at org.h2.Driver.connect(Driver.java:73)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:252)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.drop(SchemaExport.java:221)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:839)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:251)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:894)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:486)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:462)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:430)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1018)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext$3.run(AbstractApplicationContext.java:917)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	... 27 more
+03-27 23:35:05 jdbc[3]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:171)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:116)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:90)
+	at org.h2.Driver.connect(Driver.java:73)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:252)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.drop(SchemaExport.java:221)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:839)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:251)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:894)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:486)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:462)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:430)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1018)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext$3.run(AbstractApplicationContext.java:917)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	... 27 more
+03-27 23:35:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:38:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:38:52 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:38:52 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:40:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:40:17 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:40:17 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:40:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:40:38 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:40:38 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:50:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:50:47 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:51:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:51:13 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:51:13 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:51:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:51:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:51:46 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:58:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:58:12 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-27 23:58:12 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER SESSION[*] SET NLS_SORT=BINARY_AI"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+ALTER SESSION SET NLS_SORT=BINARY_AI [42001-175]
+03-28 00:20:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:20:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:20:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:20:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:22:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:22:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:22:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:22:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:23:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:23:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:23:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:23:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:24:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:27:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:27:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:27:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:27:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 00:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:49:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:49:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:49:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:49:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:54:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:54:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:54:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:54:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:56:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:56:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:56:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:56:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:59:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:59:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:59:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 08:59:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 09:01:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 09:01:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 09:01:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 09:01:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]

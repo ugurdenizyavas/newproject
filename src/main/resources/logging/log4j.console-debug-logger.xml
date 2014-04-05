@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" minValue="System.out"/>
+		<param name="Threshold" minValue="DEBUG"/>
+
+        <layout class="com.deniz.framework.logging.layout.AnonymizedPatternLayout">
+	        <param name="ConversionPattern"
+                   minValue="%d{yyyy-MM-dd HH:mm:ss.SSS} useradmin %-5p %X{loginname} %X{sessionid} %c %m  %X{duration} %n"/>
+        </layout>
+	</appender>
+
+	<category name="org.hibernate">
+		<level minValue="INFO"/>
+	</category>
+
+	<category name="org.springframework">
+		<level minValue="DEBUG"/>
+	</category>
+
+	<category name="org.hibernate">
+		<level minValue="INFO"/>
+	</category>
+	
+	<category name="com.deniz">
+		<level minValue="INFO" />
+	</category>
+	
+	<!-- This class logs on info level to see what spring configuration was loaded -->
+	<category name="org.springframework.beans.factory.xml.XmlBeanDefinitionReader">
+		<priority minValue="INFO"/>
+	</category>
+
+
+	<root>
+		<priority minValue="DEBUG"/>
+		<appender-ref ref="CONSOLE"/>
+	</root>
+
+</log4j:configuration>

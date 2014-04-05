@@ -1,0 +1,12 @@
+03-28 09:00:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 09:00:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 09:00:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]
+03-28 09:00:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OWNER_ENTITY" not found; SQL statement:
+insert into OWNER_ENTITY (id, created, simpleName, uuid, money) values (null, ?, ?, ?, ?) [42102-175]

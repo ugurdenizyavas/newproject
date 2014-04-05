@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="transactionBusinessService" class="com.deniz.newstock.piece.business.impl.TransactionBusinessServiceImpl">
+        <property name="abstractDao" ref="transactionDao"/>
+        <property name="pieceBusinessService" ref="pieceBusinessService"/>
+        <property name="ownerBusinessService" ref="ownerBusinessService"/>
+    </bean>
+
+    <bean id="transactionDao" class="com.deniz.newstock.piece.persistence.impl.TransactionDaoImpl"
+          parent="framework_daoTemplate"/>
+</beans>

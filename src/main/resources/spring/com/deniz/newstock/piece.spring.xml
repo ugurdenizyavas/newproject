@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="pieceBusinessService" class="com.deniz.newstock.piece.business.impl.PieceBusinessServiceImpl">
+        <property name="abstractDao" ref="pieceDao"/>
+        <property name="ownerBusinessService" ref="ownerBusinessService"/>
+        <property name="transactionBusinessService" ref="transactionBusinessService"/>
+        <property name="pieceDao" ref="pieceDao"/>
+        <property name="minValue" value="1d"/>
+    </bean>
+
+    <bean id="pieceDao" class="com.deniz.newstock.piece.persistence.impl.PieceDaoImpl"
+          parent="framework_daoTemplate"/>
+</beans>
